@@ -41,3 +41,5 @@ smoking = True
 print ('Занчение переменной smoking равно:', smoking)
 smoking = False
 print ('Занчение переменной smoking равно:', smoking)
+
+# ended
