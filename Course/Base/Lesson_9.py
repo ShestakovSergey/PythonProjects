@@ -1,6 +1,6 @@
 list = []
 print(list)
-'''
+
 list = ['h', 'e', 'l', 'l', 'o']
 print(list[1])
 print(list[0])
@@ -47,7 +47,7 @@ while i < len(prices):
     i += 1
 print("MIN value of prices:", minimum)
 print("MAX value of prices:", maximum)
-'''
+
 print("------------------HOMEWORK------------------------")
 
 fruits = ['apple', 'apricots', 'avocado', 'banano', 'blackberries', 'blackcurrant', 'carambola']
