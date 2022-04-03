@@ -24,7 +24,7 @@ print("Введите первое число: ")
 number1 = int(input())
 print("Вы ввели", number1)
 
-print("Введите первое число: ")
+print("Введите второе число: ")
 number2 = int(input())
 print("Вы ввели", number2)
 
