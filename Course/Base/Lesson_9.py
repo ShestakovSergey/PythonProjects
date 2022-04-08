@@ -1,3 +1,5 @@
+#Массивы
+
 list = []
 print(list)
 

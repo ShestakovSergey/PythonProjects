@@ -1,3 +1,5 @@
+#Цикл for и генератор списков
+
 str = "Python"
 print(str[0])
 for s in str:
