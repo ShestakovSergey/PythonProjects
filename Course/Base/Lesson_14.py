@@ -76,4 +76,4 @@ def average(*numbers):
         s += n
     return s / len(numbers)
 
-print(average(1, 3, 7, 5, 9))
+print(average(1, 3, 7, 5, 35))
