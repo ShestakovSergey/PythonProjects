@@ -1,3 +1,5 @@
 #created gitignore
 /.idea/
 Course/.idea/
+.DS_Store
+Course/.DS_Store
