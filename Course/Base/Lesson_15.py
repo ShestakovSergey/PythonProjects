@@ -33,4 +33,3 @@ def squarecircle(r):
 r = float(input("Введите радиус окружности: "))
 
 print("Площадь окружности с радиусом", r, "равна: ", squarecircle(r))
->>>>>>> origin
