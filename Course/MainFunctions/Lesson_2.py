@@ -49,3 +49,23 @@ print(s6.format(data))
 
 s7 = "int: {0:d}; bin: {0:b}"
 print(s7.format(127))
+
+print("-----------HOMEWORK-------------")
+
+str1 = input("Введите произвольную строку: ")
+
+for w in str1:
+    print(ord(w))
+
+
+def checkStr(x):
+    try:
+        int(x)
+        print("Спасибо!")
+    except ValueError:
+        print("Некорректный ввод")
+
+
+str2 = input("Введите цифры: ")
+checkStr(str2)
+
