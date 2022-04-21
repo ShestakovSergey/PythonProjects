@@ -1,5 +1,5 @@
 #Массивы
-
+'''
 list = []
 print(list)
 
@@ -49,6 +49,7 @@ while i < len(prices):
     i += 1
 print("MIN value of prices:", minimum)
 print("MAX value of prices:", maximum)
+'''
 
 print("------------------HOMEWORK------------------------")
 

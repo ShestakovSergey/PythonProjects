@@ -1,7 +1,6 @@
 #Математические функции
-
 from math import *
-
+'''
 print(e)
 print(pi)
 
@@ -26,6 +25,7 @@ print(sqrt(x * x + y * y))
 print("-------------------------")
 
 print(round(7 / 9, 3))
+'''
 
 print("-----------------HOMEWORK--------------------------")
 

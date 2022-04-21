@@ -1,5 +1,5 @@
 #Кортежи
-
+'''
 mytuple = tuple()
 print(mytuple)
 
@@ -13,6 +13,7 @@ print(mytuple[1])
 
 mytuple = tuple('Python')
 print(mytuple)
+'''
 
 print("-------------------HOMEWORK----------------------")
 

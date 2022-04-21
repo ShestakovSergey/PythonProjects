@@ -1,5 +1,5 @@
 #Функции
-
+'''
 def printpython():
     print("Python")
 
@@ -57,6 +57,7 @@ def getmax(arr):
     return max
 
 print(getmax([1, 3, 8, 2, 6, 10, 5]))
+'''
 
 print("---------------HOMEWORK------------------------")
 

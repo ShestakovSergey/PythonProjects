@@ -1,5 +1,5 @@
 #Словари
-
+'''
 mydict = dict()
 print(mydict)
 
@@ -22,5 +22,15 @@ for key in mytuple:
 
 mydict = {str(i): i * 3 for i in range(1, 10)}
 print(mydict)
+'''
 
 print("-------------------HOMEWORK----------------------")
+
+mydict = {'name': 'none', 'age': -1}
+print(mydict)
+yourName = input("Введите ваше имя: ")
+yourAge = input("Введите ваш возраст: ")
+mydict['name'] = yourName
+mydict['age'] = yourAge
+print(mydict)
+

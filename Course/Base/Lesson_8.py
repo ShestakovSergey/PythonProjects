@@ -1,5 +1,5 @@
 #Цикл While
-
+'''
 i = 1
 while i <= 10:
     print("Hello World!")
@@ -39,9 +39,9 @@ while True:
     code = input("Enter zero to exit:")
     if code == "0":
         break
+'''
 
 print("-----------------HOMEWORK-----------------------")
-
 
 s = 0
 while True:

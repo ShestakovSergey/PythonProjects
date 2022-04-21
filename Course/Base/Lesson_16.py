@@ -42,7 +42,7 @@ while True:
     code = input("Введите команду: ")
     if code == "0":
         exit(0)
-    mylist = list(map(float, input("Введите список чисел через пробел: ").split()))
+    mylist = list(map(int, input("Введите список целых чисел через пробел: ").split()))
     if code == "1":
         r = maxnumbr(mylist)
     elif code == "2":

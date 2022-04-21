@@ -1,5 +1,5 @@
 #Строковые функции
-
+'''
 def isThisNumb(x):
     try:
         float(x)
@@ -49,6 +49,10 @@ print(s6.format(data))
 
 s7 = "int: {0:d}; bin: {0:b}"
 print(s7.format(127))
+
+s8 = "Round: (150/29): {0:.4}"
+print(s8.format(150 / 29))
+'''
 
 print("-----------HOMEWORK-------------")
 
