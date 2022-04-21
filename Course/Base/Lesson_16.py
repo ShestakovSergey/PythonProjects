@@ -3,8 +3,6 @@
 from maxminavg import *
 
 '''
-#import math
-#import random
 from random import *
 from math import sin, cos, pi
 import math, cmath as cm
