@@ -5,3 +5,4 @@ Course/.idea/
 Course/.DS_Store
 .kdev4/
 PythonProjects.kdev4
+Course/Base/__pycache__/
