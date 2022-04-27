@@ -10,8 +10,7 @@ class Shape:
         print("Draw figure")
 
 class Circle(Shape):
-    r = 0
-    def __init__(self, x, y, r):
+    def __init__(self, x, y, r = 0):
         Shape.__init__(self, x, y)
         self.r = r
     def draw(self):
@@ -20,6 +19,8 @@ class Circle(Shape):
 class Rectangle(Shape):
     w = 0
     h = 0
+
+
     def __init__(self, x, y, w, h):
         Shape.__init__(self, x, y)
         self.w = w
