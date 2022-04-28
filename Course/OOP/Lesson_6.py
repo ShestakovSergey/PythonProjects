@@ -42,8 +42,6 @@ r.draw()
 print("----HOMEWORK------")
 
 class autoGPS:
-    x = 0
-    y = 0
     def __init__(self, x, y):
         self.x = x
         self.y = y
@@ -51,23 +49,26 @@ class autoGPS:
         print("Location: ", self.x, ":", self.y)
     def moveAuto(self, location):
         print("Moved car from", self.x, ":", self.y, "to", location.x, ":", location.y)
+        self.x = location.x
+        self.y = location.y
 
 class vehicle(autoGPS):
-    brand = "no"
-    model = "no"
-    capacity = 0
-    mileage = 0
-    def __init__(self, x, y, brand, model, capacity, mileage):
+    def __init__(self, x, y, brand, model, engine):
         autoGPS.__init__(self, x, y)
-        self.md = model
+        self.m = model
         self.b = brand
-        self.c = capacity
-        self.ml = mileage
+        self.e = engine
     def __str__(self):
-        return "Brand: " + str(self.b) + " Model: " + str(self.md)
+        return "Brand: " + str(self.b) + "; Model: " + str(self.m) + "; Engine: " + str(self.e)
+    def moveAuto(self, location):
+        print("Moved " +str(self.b) + " " +str(self.m) + " from", self.x, ":", self.y, "to", location.x, ":", location.y)
+        self.x = location.x
+        self.y = location.y
 
 location = autoGPS(1, 1)
 location.moveAuto(autoGPS(100, 200))
-car = vehicle(1, 1, "Hyundai", "Solaris", 2, 50)
+location.moveAuto(autoGPS(400, 400))
+car = vehicle(1, 1, "Tesla", "M1", "Electro")
 print(car)
-
+car.moveAuto(autoGPS(100, 200))
+car.moveAuto(autoGPS(400, 400))
