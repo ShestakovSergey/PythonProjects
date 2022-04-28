@@ -11,7 +11,7 @@ class Point:
     def range(self, p):
         return sqrt((p.x - self.x) ** 2 + (p.y - self.y) ** 2)
     def __str__(self):
-        return  "Координаты: (" + str(self.x) + "; " + str(self.y) + ")"
+        return "Координаты: (" + str(self.x) + "; " + str(self.y) + ")"
 
 class Auto:
     p = Point(0, 0)
@@ -23,7 +23,7 @@ class Auto:
         if self.speed != 0:
             return  self.p.range(endp) / self.speed
         else:
-            return  -1
+            return -1
 
 p = Point(1, 1)
 print(p)
