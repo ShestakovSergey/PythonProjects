@@ -1,9 +1,11 @@
 from tkinter import *
+from window import *
 
 root = Tk()
-root.title("Окно приложения")
-root.resizable(True, True)
+setwindow(root)
 
-root.geometry("800x600+700+400")
+label = Label(root, text="Моя метка")
+
+label.pack()
 
 root.mainloop()
