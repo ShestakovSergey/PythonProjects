@@ -3,7 +3,10 @@ from window import *
 root = Tk()
 setwindow(root)
 
-buttom = Button(root, text="Моя кнопка", bg="green", fg="green", font="Tahoma 18")
+button1 = Button(root, text="Моя кнопка", bg="red", fg="black", font="Tahoma 18")
+button2 = Button(root, text="Моя кнопка", bg="yellow", fg="black", font="Tahoma 20")
 
-buttom.pack()
+button1.pack()
+button2.pack()
+
 root.mainloop()
