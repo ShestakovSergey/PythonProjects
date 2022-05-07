@@ -6,3 +6,6 @@ Course/.DS_Store
 .kdev4/
 PythonProjects.kdev4
 Course/Base/__pycache__/
+Pipfile
+Pipfile.lock
+venv/
