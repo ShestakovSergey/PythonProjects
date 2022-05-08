@@ -1,5 +1,5 @@
 from tkinter import *
-from tkmacosx import *
+#from tkmacosx import *
 
 def setwindow(root):
     root.title("Окно приложения")
