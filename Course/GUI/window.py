@@ -1,6 +1,6 @@
 def setwindow(root):
     root.title("Окно приложения")
-    root.resizable(False, False)
+    root.resizable(True, True)
 
     w = 640
     h = 480

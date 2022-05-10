@@ -4,12 +4,13 @@ from window import *
 root = Tk()
 setwindow(root)
 
-text = Text(root, bd=2, font="Tahoma 20", bg="aqua", fg="gray", width=24)
-scrollbar = Scrollbar(root, command=text.yview, orient=VERTICAL)
+text = Text(root, bd=2, font="Tahoma 20", bg="aqua", width=40, height=10)
+text.pack(side=LEFT)
 
-text.pack()
+scrollbar = Scrollbar(root, command=text.yview, orient=VERTICAL)
 scrollbar.pack(side=LEFT, fill=Y)
 
-text['yscrollcommand'] = scrollbar.set
+text.config(yscrollcommand=scrollbar.set)
+#text['yscrollcommand'] = scrollbar.set
 
 root.mainloop()
