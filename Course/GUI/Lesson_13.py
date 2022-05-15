@@ -9,15 +9,14 @@ label_author = Label(root, text="Authorization", font="Tahoma 20", borderwidth=1
 label_login = Label(root, text="Login", font="Tahoma 20", borderwidth=1, relief="solid")
 entry_login = Entry(root, font="Tahoma 20", borderwidth=1, relief="solid")
 label_passwd = Label(root, text="Password", font="Tahoma 20", borderwidth=1, relief="solid")
-entry_passwd = Entry(root, font="Tahoma 20", borderwidth=1, relief="solid")
+entry_passwd = Entry(root, font="Tahoma 20", borderwidth=1, relief="solid", show="*")
 button = Button(text="Enter", font="Tahoma 20", borderwidth=1, relief="raised")
 
-
-label_author.place(x=0, y=0, width=600, height=50, anchor="nw")
-label_login.place(x=0, y=50, width=200, height=50, anchor="nw")
-entry_login.place(x=200, y=50, width=400, height=50, anchor="nw")
-label_passwd.place(x=0, y=100, width=200, height=50, anchor="nw")
-entry_passwd.place(x=200, y=100, width=400, height=50, anchor="nw")
-button.place(x=0, y=150, width=600, height=50, anchor="nw")
+label_author.grid(row=0, column=0, columnspan=2, sticky="nw", padx=5, pady=5)
+label_login.grid(row=1, column=0, sticky="w", pady=5, padx=5)
+entry_login.grid(row=1, column=1, sticky="w", pady=5, padx=5)
+label_passwd.grid(row=2, column=0, sticky="w", pady=5, padx=5)
+entry_passwd.grid(row=2, column=1, sticky="w", pady=5, padx=5)
+button.grid(row=3, column=0, columnspan=2, sticky="se", padx=5, pady=5)
 
 root.mainloop()

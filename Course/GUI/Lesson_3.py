@@ -4,7 +4,7 @@ from window import *
 root = Tk()
 setwindow(root)
 
-button1 = Button(root, text="Моя кнопка", bg="red", fg="black", font="Tahoma 18")
+button1 = Button(root, text="Моя кнопка", bg="red", fg="black", font="Tahoma 10")
 button2 = Button(root, text="Моя кнопка", bg="yellow", fg="black", font="Tahoma 20")
 
 button1.pack()

@@ -1,5 +1,5 @@
 def setwindow(root):
-    root.title("Окно приложения")
+    root.title("GUI for Python")
     root.resizable(True, True)
 
     w = 640
