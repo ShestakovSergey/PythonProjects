@@ -5,17 +5,15 @@ from random import *
 root = Tk()
 setwindow(root)
 
-choice = IntVar()
-check = Checkbutton(root, text="Согласие на обработку данных", variable=choice, onvalue=1, offvalue=0)
-#check.select()
-check.pack()
+choice1 = StringVar()
+choice2 = StringVar()
+check1 = Checkbutton(root, text="Согласие на обработку данных", variable=choice1, onvalue="Yes", offvalue="No")
+check2 = Checkbutton(root, text="Согласие на обработку данных", variable=choice2, onvalue="Yes", offvalue="No")
 
-numb = 1 if int(random() * 10) > 4 else 0
-choice.set(numb)
+check1.pack()
+check2.pack()
 
-label = Label(root, text=choice.get())
-label.pack()
-
-print(choice.get())
+choice1.set("No")
+choice2.set("Yes")
 
 root.mainloop()

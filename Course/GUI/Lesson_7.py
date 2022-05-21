@@ -16,7 +16,7 @@ r1.pack()
 r2.pack()
 r3.pack()
 
-choice1.set("red")
+choice1.set("green")
 print(choice1.get())
 
 choice2 = IntVar()
