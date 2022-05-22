@@ -5,16 +5,32 @@ from window import *
 root = Tk()
 setwindow(root)
 
-def gen_numb(event):
-    label["text"] = int(random() * 100)
 
-button = Button(root, text="Generate random number", font="Tahoma 20", borderwidth=2, relief="raised")
-button.pack(pady=10, padx=5)
+def btn_clk(event):
+    lbl['text'] = "Randon number {0}".format(int(random() * 100))
 
-label = Label(root, text="100", font="Tahoma 20", bg="#ffeaca")
-label.pack(pady=10, padx=5)
 
-button.bind("<Button-1>", gen_numb)
+btn = Button(root,
+              text="Ask",
+              font="Tahoma 14",
+              borderwidth=2,
+              pady=5,
+              padx=10,
+              relief=RAISED
+              )
 
+lbl = Label(root,
+              text="Randon number",
+              font="Tahoma 14",
+              borderwidth=2,
+              pady=5,
+              padx=10,
+              relief=RIDGE
+              )
+
+btn.bind("<Button-1>", btn_clk)
+
+btn.pack(pady=10)
+lbl.pack(pady=10)
 
 root.mainloop()

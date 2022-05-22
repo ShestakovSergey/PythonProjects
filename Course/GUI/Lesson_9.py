@@ -4,17 +4,6 @@ from window import *
 root = Tk()
 setwindow(root)
 
-data = ["Apple", "Orange", "Lemon"]
-
-list2 = Listbox(root, font="Tahoma 20", width=20, height=4, selectmode=MULTIPLE)
-list2.pack()
-
-for d in data:
-    list2.insert(END, d)
-
-list2.selection_set(0, 2)
-print(list2.selection_get())
-
 cities = []
 
 while True:
@@ -23,16 +12,18 @@ while True:
         break
     cities.append(city)
 
-list1 = Listbox(root, font="Tahoma 20", width=20, height=4, selectmode=MULTIPLE)
-list1.pack(side=LEFT)
+frm = Frame(root)
+frm.pack()
 
-scroll = Scrollbar(root, command=list1.yview, orient=VERTICAL)
-scroll.pack(side=LEFT, fill=Y)
+lst = Listbox(frm, font="Tahoma 20", width=20, height=4, selectmode=MULTIPLE)
+lst.pack(side=LEFT)
 
-list1.config(yscrollcommand=scroll.set)
+scroll = Scrollbar(frm, command=lst.yview, orient=VERTICAL)
+scroll.pack(side=RIGHT, fill=Y)
+
+lst.config(yscrollcommand=scroll.set)
 
 for d in cities:
-    list1.insert(END, d)
-
+    lst.insert(END, d)
 
 root.mainloop()

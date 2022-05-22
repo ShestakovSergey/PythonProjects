@@ -5,10 +5,15 @@ from random import *
 root = Tk()
 setwindow(root)
 
-numb = int(random() * 100)
+numb = int(random() * 1000)
 
-label = Label(root, text=numb)
+label = Label(root,
+              text=numb
+              )
 
-label.place(relx=0.5, rely=0.5, anchor="center")
+label.place(relx=0.5,
+            rely=0.5,
+            anchor="center"
+            )
 
 root.mainloop()
