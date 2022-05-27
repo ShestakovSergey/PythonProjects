@@ -1,6 +1,6 @@
 def setwindow(root):
     root.title("GUI for Python")
-    root.resizable(True, True)
+    root.resizable(False, False)
 
     w = 640
     h = 480

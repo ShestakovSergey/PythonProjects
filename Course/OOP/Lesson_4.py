@@ -1,41 +1,23 @@
-from math import *
-
-
-class Point:
-    def __init__(self, x=0, y=0):
+class Arearectangle:
+    def __init__(self, x=0, y=0, w=0, h=0):
         self.x = x
         self.y = y
-
-    def range(self, pobj):
-        return sqrt((pobj.x - self.x) ** 2 + (pobj.y - self.y) ** 2)
+        self.w = w
+        self.h = h
 
     def __str__(self):
-        return "Координаты: (" + str(self.x) + "; " + str(self.y) + ")"
+        return "Rectangle (" + str(self.x) + ";" + str(self.y) + ") width " + str(self.w) + " and height " + str(self.h)
+
+    def square(self):
+        return self.w * self.h
+
+    def perimeter(self):
+        return 2 * (self.w + self.h)
 
 
-class Auto:
-    pobj = Point(0, 0)
-    speed = 0
+rds = Arearectangle(2, 3, 15, 10)
 
-    def __init__(self, pobj=Point(0, 0), speed=0):
-        self.pobj = pobj
-        self.speed = speed
-
-    def gettime(self, endp):
-        if self.speed != 0:
-            return self.pobj.range(endp) / self.speed
-        else:
-            return -1
-
-
-p = Point(1, 1)
-print(p)
-print('----------------------')
-print(p.range(Point()))
-print(p.range(Point(3, 4)))
-
-auto = Auto()
-auto.speed = 50
-print(auto.speed)
-print(p)
-print(auto.gettime(Point(3, 4)))
+print(rds)
+print(rds.x, ':', rds.y, ':', rds.w, ':', rds.h)
+print("Square of the rectangle", rds.square())
+print("rectangle perimeter", rds.perimeter())
