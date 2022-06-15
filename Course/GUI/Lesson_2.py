@@ -8,12 +8,12 @@ setwindow(root)
 numb = int(random() * 1000)
 
 label = Label(root,
-              text=numb
+              text=numb,
+              font="Tahoma 20",
+              fg="#FF0000",
+              bg="#98FB98"
               )
 
-label.place(relx=0.5,
-            rely=0.5,
-            anchor="center"
-            )
+label.pack()
 
 root.mainloop()

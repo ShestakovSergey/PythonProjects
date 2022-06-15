@@ -6,8 +6,6 @@ def setwindow(root):
     h = 480
     ws = root.winfo_screenwidth()
     wh = root.winfo_screenheight()
-    print(ws, wh)
-
     x = int(ws / 2 - w / 2)
     y = int(wh / 2 - h / 2)
 

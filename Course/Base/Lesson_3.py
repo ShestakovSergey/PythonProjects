@@ -1,22 +1,18 @@
 numb = 10
 print('Занчение переменной numb равно:', numb)
 numb = 15
-print ('Занчение переменной numb равно:', numb)
+print('Занчение переменной numb равно:', numb)
 firstname = "Shestakov"
-print ('Занчение переменной firstname равно:', firstname)
+print('Занчение переменной firstname равно:', firstname)
 firstname = "Trishina"
-print ('Занчение переменной firstname равно:', firstname)
+print('Занчение переменной firstname равно:', firstname)
 smoking = True
-print ('Занчение переменной smoking равно:', smoking)
+print('Занчение переменной smoking равно:', smoking)
 smoking = False
-print ('Занчение переменной smoking равно:', smoking)
+print('Занчение переменной smoking равно:', smoking)
 
-#ended
-
-#Создание многострочного комментария
 text = '''Первая строка
 Вторая строка
 Третья строка'''
 
-#Вывод многострочного комментария
 print(text)

@@ -1,6 +1,5 @@
 from tkinter import *
 from window import *
-from random import *
 
 root = Tk()
 setwindow(root)
