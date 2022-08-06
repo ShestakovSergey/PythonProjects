@@ -1,6 +1,10 @@
 import subprocess
+import io
 
-result = subprocess.run(['date', '-v1m'], stdout=subprocess.PIPE)
-outresult = result.stdout.decode()
+sp = subprocess.Popen(['dir'], stdout=subprocess.PIPE, shell=True)
+out = io.TextIOWrapper(sp.stdout, encoding='Windows-1251')
 
-print(outresult)
+s = ' '
+while s:
+    s = out.readline()
+    print(s)

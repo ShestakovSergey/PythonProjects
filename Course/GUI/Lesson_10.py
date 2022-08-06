@@ -1,16 +1,13 @@
 from tkinter import *
 from window import *
 
-root = Tk()
-setwindow(root)
-
 root_h = Tk()
 setwindow(root_h)
 
-frame = Frame(root, bd=1)
+frame = Frame(root_h, bd=1)
 frame.pack()
 
-text = Text(frame, font="Tahoma 20", bg="aqua", width=40, height=10)
+text = Text(frame, font="Tahoma 20", bg="aqua", width=40, height=5)
 text.pack(side=LEFT)
 
 scrollbar = Scrollbar(frame, command=text.yview, orient=VERTICAL)
