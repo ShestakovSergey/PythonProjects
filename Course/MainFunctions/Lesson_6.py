@@ -1,18 +1,3 @@
-# Работа с файлами
-
-'''
-handler = open('text.txt', 'w')
-handler.write('Hello Sergey! How are you?')
-handler.close()
-
-handler = open('text.txt', 'r')
-print(handler.read(14))
-print(handler.read())
-handler.seek(0)
-print(handler.read())
-handler.close()
-'''
-
 file = "text.txt"
 
 while True:
@@ -34,4 +19,3 @@ while True:
             print("Файла ещё не существует!")
     else:
         print("Неизвестная команда")
-
