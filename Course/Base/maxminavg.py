@@ -1,16 +1,18 @@
 def maxnumbr(number):
-    max = number[0]
+    maxi = number[0]
     for n in number:
-        if n > max:
-            max = n
-    return max
+        if n > maxi:
+            maxi = n
+    return maxi
+
 
 def minnumbr(number):
-    min = number[0]
+    mini = number[0]
     for n in number:
-        if n < min:
-            min = n
-    return min
+        if n < mini:
+            mini = n
+    return mini
+
 
 def average(number):
     s = 0
